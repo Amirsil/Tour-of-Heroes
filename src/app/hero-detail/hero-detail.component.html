@@ -1,0 +1,12 @@
+<div class="container" *ngIf="hero">
+  <h2>{{ hero.name }} Details</h2>
+  <div>ID: {{ hero.id }}</div>
+  <div style="  margin-top: 1em;">
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name" />
+  </div>
+  <div style="text-align: center; display: flex; justify-content: space-between;">
+    <button id="back" type="button" (click)="goBack()">Back</button>
+    <button id="save" type="button" (click)="save()">Save</button>
+  </div>
+</div>
